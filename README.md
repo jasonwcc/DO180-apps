@@ -1,15 +1,15 @@
 # DO180-apps
-DO180 Repository for Sample Applications \
+DO180 Repository for Sample Applications 
 
 # Whichever it is, log into cluster provided, and create new project
 oc login -u developer -p developer ${RHT_OCP4_MASTER_API} \
-oc new-project test-project \
+oc new-project test-project 
 
 # Deploy a simple nodejs app
 oc new-app --name my-nodejs \\ \
 nodejs:12~https://github.com/jasonwcc/DO180-apps#master --context-dir nodejs-helloworld
 oc get all -l app=my-nodejs \
-oc logs -f bc/my-nodejs \
+oc logs -f bc/my-nodejs 
 
 # Deploy a simple php app
 oc new-app --name my-php \\ \
