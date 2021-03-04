@@ -18,13 +18,13 @@ oc logs -f bc/my-nodejs
 oc new-app --name my-php \\ \
 php:7.3~https://github.com/jasonwcc/DO180-apps#master --context-dir php-helloworld
 
-oc logs -f bc/my-nodejs \
+oc logs -f bc/my-nodejs 
 
-oc get svc \
+oc get svc 
 
-oc expose svc my-php \
+oc expose svc my-php 
 
-oc get route \
+oc get route 
 
 copy the whole url 
 (should look like my-php-test-project.apps.na45.prod.nextcle.com) \
@@ -36,11 +36,11 @@ Hello, World! php version is 7.3.2.0
 oc new-app --name my-temp \\ \
 php:latest~https://github.com/jasonwcc/DO180-apps --context-dir temps
 
-oc logs -f bc/my-temps \
+oc logs -f bc/my-temps 
 
-oc expose svc my-temps \
+oc expose svc my-temps 
 
-oc get route \
+oc get route 
 
 copy the whole url 
 (should look like my-temps-test-project.apps.na45.prod.nextcle.com) \
