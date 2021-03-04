@@ -20,6 +20,6 @@ oc logs -f bc/my-nodejs \
 oc get svc \
 oc expose svc my-php \
 oc get route \
-copy the whole url (should look like my-php-proj2.apps.na45.prod.nextcle.com)
-curl my-php-proj2.apps.na45.prod.nextcle.com
+copy the whole url (should look like my-php-proj2.apps.na45.prod.nextcle.com) \
+curl my-php-proj2.apps.na45.prod.nextcle.com \
 Hello, World! php version is 7.3.2.0
